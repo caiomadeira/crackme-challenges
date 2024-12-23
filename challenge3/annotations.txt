@@ -1,0 +1,25 @@
+in str_cat():
+
+Desvendando f.2605:
+    f é um simbolo. 
+    Devemos verificar se f é um símbolo global, uma estrutura
+    ou uma área de memória estática.
+
+    o número 2605 pode ser um deslocamento dentro de uma estrutura
+    ou array OU uma referência a um endereço de memória específica.
+
+    Analisando a logica for, vemos que, dentro do loopm é modificada
+    uma sequência de valores começando no endereço representado por f.2605
+
+    Sugerindo que f.2605 é o início de um buffer ou array onde cada elemento
+    depende do anterior.
+
+    ANÁLISE ORIENTADA A UMA POSSÍVEL ESTRUTURA:
+        (&F.2605)[local_c] indica que f.2605 é tratado como ponteiro ou array.
+        pondo como:
+        typedef struct {
+            char buffer[10]
+        } f;
+
+    Nesse caso, f.2605 seria equivalente a f.buffer[0]
+
