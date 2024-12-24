@@ -1,4 +1,4 @@
-#### This repo contains cracme challenges solved by Caio Madeira. All that is just for study. :) 
+#### This repo contains crack.me challenges solved by Caio Madeira. All that is just for study. :) 
 
 ---
 
