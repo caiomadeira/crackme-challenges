@@ -14,14 +14,13 @@ else
         cd "$CHALLENGE_DIR$1"
 
         mkdir "ghidra_project"
-        cd .. 
         echo "Ghidra project folder created."
 
         mkdir "problem"
-        cd ..
         echo "Problem folder created."
 
         mkdir "reversed"
+        cd "reversed/"
         touch "main.c"
         cd ..
         echo "Reversed folder and .c file created created."
