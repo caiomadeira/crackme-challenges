@@ -1,0 +1,5 @@
+
+
+enter password: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA (the input are 31 characters long) 
+uid: 0
+you are logged in as admin

