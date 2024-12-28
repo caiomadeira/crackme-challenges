@@ -24,7 +24,6 @@ int checkSerial(char *argv)
   int result;
   int i;
   
-/* This function checks the serial*/
   len = strlen(argv);
   //if (len == 0x10) 
   if (len == 16) 
@@ -32,9 +31,8 @@ int checkSerial(char *argv)
     printf("serial is equal to 16\n");
     for (i = 0; len = strlen(argv), i < len; i = i + 2) 
     {
-        printf("%c - %c = %d \n", argv[i], argv[i + 1], argv[i] - argv[i + 1]);
-      if (argv[i] - argv[i + 1] != -1) 
-      {
+      printf("%c - %c = %d \n", argv[i], argv[i + 1], argv[i] - argv[i + 1]);
+      if (argv[i] - argv[i + 1] != -1) {
         return -1;
       }
     }
