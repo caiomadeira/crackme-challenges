@@ -2,6 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+void _a97962fc_d68f_47c5_9221_d17da57166a4(char *argv)
+
+{
+  size_t len;
+  void *p;
+  char *s;
+  int i;
+  
+  len = strlen(argv);
+  s = malloc(len + 1);
+  s = (char *)memset(p, 0,  + 1);
+  pcVar2 = strcpy(pcVar2,param_1);
+  local_20 = 0;
+  while (pcVar2[local_20] != '\0') {
+    pcVar2[local_20] = (byte)pcVar2[local_20] >> 1;
+    local_20 = local_20 + 1;
+  }
+  puts(pcVar2);
+  free(pcVar2);
+  return;
+}
+
+
 void shiftBinaryStr(char *argv)
 {
     size_t len;
@@ -110,6 +134,24 @@ int main(int argc, char** argv)
         if ((len & 1) == 0)
         {
             str = (char*)strangeInvertingString(argv[1]);
+            /*
+                Aqui está o pulo do gato.
+                A suposta string: _867a0be1_691e_4546_9b6c_020df3bcdc93 é
+                possivelmente uma chave esperada ou valor de reference. Visto que
+                ela esta sendo usada na strcmp que compara duas strings.
+
+                A funcao strangeInvertingString transforma a entrada do usuário para 
+                comparar c essa string.
+
+                Tentando decodicar ela no Ghidra (LIsting View clicando c o botao direito, indo em data -> string)
+                temos algo como: 
+                "]\x10\x14LC\x10CNM\x14?GL4#&A[(R\x1 0\x11?S\x11LTR"
+
+                A string interpretada parece ser composta por uma mistura de caracteres
+                legíveis e valores binarios ou não.
+
+                Podemos entender que ela é uma string codificada.
+            */
             x = strcmp(_867a0be1_691e_4546_9b6c_020df3bcdc93, str);
             if (x == 0)
             {

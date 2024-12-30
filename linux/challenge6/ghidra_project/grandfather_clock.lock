@@ -1,9 +1,9 @@
 #Ghidra Lock File
-#Sat Dec 28 17:13:50 BRT 2024
+#Sat Dec 28 19:09:35 BRT 2024
 <META>\ Supports\ File\ Channel\ Locking=Channel Lock
 Hostname=mad-linux
 OS\ Architecture=amd64
 OS\ Name=Linux
 OS\ Version=6.11.0-13-generic
-Timestamp=12/28/24, 5\:13\u202FPM
+Timestamp=12/28/24, 7\:09\u202FPM
 Username=caiomadeira
